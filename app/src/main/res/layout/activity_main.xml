@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Seu Time:"
+    android:textSize="30sp"
+    android:id="@+id/valor1"
+    />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/valor1"
+        android:id="@+id/campo1"
+        android:hint="Digite aqui "
+        android:textSize="22sp"
+        android:inputType="textMultiLine"
+        android:minEms="2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/campo1"
+        android:text="Vitorias:"
+        android:textSize="30sp"
+        android:id="@+id/valor2"
+        android:layout_marginTop="25dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/campo1"
+        app:layout_constraintLeft_toRightOf="@id/valor2"
+        android:id="@+id/campo2"
+        android:hint="Digite aqui "
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        android:maxLength="2"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/campo2"
+    android:text="Empates:"
+    android:textSize="30sp"
+    android:id="@+id/valor3"
+    android:layout_marginTop="25dp"
+    />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/campo2"
+        app:layout_constraintLeft_toRightOf="@id/valor3"
+        android:id="@+id/campo3"
+        android:hint="Digite aqui "
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        android:maxLength="2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/campo3"
+        android:text="Derrotas:"
+        android:textSize="30sp"
+        android:id="@+id/valor4"
+        android:layout_marginTop="25dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/campo3"
+        app:layout_constraintLeft_toRightOf="@id/valor4"
+        android:id="@+id/campo4"
+        android:hint="Digite aqui "
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        android:maxLength="2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Aproveitamento"
+        android:text="Calcular"
+        app:layout_constraintTop_toBottomOf="@id/campo4"
+        android:textSize="20sp"
+        android:id="@+id/bt_01"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensagem Secreta"
+        app:layout_constraintTop_toBottomOf="@id/bt_01"
+        android:visibility="invisible"
+        android:textSize="22sp"
+        android:id="@+id/Mg_secreta"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
